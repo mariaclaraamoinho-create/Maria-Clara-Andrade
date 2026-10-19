@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Offline</title>
+    
+    <!-- Link para ícones (necessário para a seta do botão voltar) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <h1 class="titulo-album">Lembranças Boas</h1>
+    <div class="subtitulo-album">Uma das minhas memórias favoritas</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto1.jpeg', 'Minha Branquinha')">
+            <img src="img/foto1.jpeg" alt="Minha Branquinha">
+            <div class="legenda">Minha Branquinha, obrigada por cada momento, eu te amo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto2.jpeg', 'Minha Família')">
+            <img src="img/foto2.jpeg" alt="Minha Família">
+            <div class="legenda">Minha Família, obrigada por tanto</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto3.jpeg', 'Minha bibia')">
+            <img src="img/foto3.jpeg" alt="Minha bibia">
+            <div class="legenda">Minha bibia, eu te amo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto4.jpeg', 'As mais mais')">
+            <img src="img/foto4.jpeg" alt="As mais mais">
+            <div class="legenda">As mais mais, obrigada por cada risada, com vocês me sinto em casa</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto5.jpeg', 'Paz')">
+            <img src="img/foto5.jpeg" alt="Paz">
+            <div class="legenda">Tempos bons</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto6.jpeg', 'Gatinhas')">
+            <img src="img/foto6.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Minhas gatonas</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto7.jpeg', 'Minha maior inspiração')">
+            <img src="img/foto7.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Vocês são tudo para mim, meu maior exemplo sempre serão vocês</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto9.jpeg', 'Meus amores')">
+            <img src="img/foto9.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Amorecos do meu coração</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto10.jpeg', 'branquinha')">
+            <img src="img/foto10.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Vi, com você me sinto em paz</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto11.jpeg', 'Minhas chatinhas')">
+            <img src="img/foto11.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Minhas kibes, amo vocês</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto12.jpeg', 'Paz')">
+            <img src="img/foto12.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">Vocês são tudo pra mim, obrigada por tudo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto13.jpeg', 'bbzinhas')">
+            <img src="img/foto13.jpeg" alt="Minhas bbzinhas">
+            <div class="legenda">bbzinhas lindas</div>
+        </div>
+    </div>
+
+    <audio controls autoplay loop class="musica-fundo">
+        <source src="audio/musica2.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container-botao-voltar">
+        <a href="index.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+    </div>
+
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+
+</body>
+</html>
